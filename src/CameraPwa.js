@@ -7,7 +7,11 @@ const CameraPwa = () => {
   let video = videoRef.current
 
   navigator.mediaDevices.getUserMedia({
-    video: {facing: {exact: 'environment'}},
+    video: {
+    facingMode: {
+      exact: "environment"
+    }
+    },
     audio: false
    }).then(stream => {
       video = videoRef.current;
