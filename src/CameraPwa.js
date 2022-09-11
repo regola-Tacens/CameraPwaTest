@@ -11,7 +11,8 @@ const CameraPwa = () => {
       facingMode: "environment",
       width: { min: 1024, ideal: 1280, max: 1920 },
       height: { min: 776, ideal: 720, max: 1080 }
-   }
+    }, 
+    audio: false
    }).then(stream => {
     video = videoRef.current;
     if(video) {
@@ -30,7 +31,7 @@ const CameraPwa = () => {
     <div style={{position: 'relative'}}>
       <div style={{overflow: 'hidden', margin: '0 auto'}}>
         <Masque />
-        <video style={{zIndex: 2, overflow:"hidden", height:'100vh', margin: '0 auto', position:'relative'}} ref={videoRef} autoPlay />
+        <video style={{zIndex: 2, overflow:"hidden", height:'100vh', margin: '0 auto', position:'relative'}} ref={videoRef} autoPlay muted playsinline />
       </div>
       <canvas ref={canvasRef} style={{display: 'none'}}/>
       <button style={{position: 'absolute',bottom:'1rem', zIndex:'150', marginLeft:'50%', transform: 'translateX(-50%)', borderRadius:'50%', width:'80px', height:'80px', border:"none"}} onClick={handleTakePhoto}>Shoot !</button>
