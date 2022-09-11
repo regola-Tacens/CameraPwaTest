@@ -4,7 +4,7 @@ import DataList from "./DataList";
 
 const AppTest = () => {
   const [ filter, setFilter] = useState(null)
-  const [myVar, setMyVar] = useState (process.env.REACT_APP_NOT_SECRET_CODE)
+  const [myVar] = useState (process.env.REACT_APP_NOT_SECRET_CODE)
 console.log(myVar)
   return (
     <div>

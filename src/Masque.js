@@ -1,4 +1,4 @@
-import mask from './assets/Exclude.svg'
+
 const Masque = () => {
   
   return<div style={{position: 'absolute', zIndex: 50}}>

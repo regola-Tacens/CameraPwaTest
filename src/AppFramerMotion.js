@@ -4,15 +4,9 @@ import { motion, useMotionValue, useTransform } from "framer-motion";
 import "./index.css";
 
 const AppFramerMotion = () => {
-  const [count, setCount] = useState(0);
-  const [scalex, setScale] = useState(2);
   const [isOpen, setIsOpen] = useState(false);
   const x = useMotionValue(0);
   const opacity = useTransform(x, [-100, 0, 100], [0, 1, 0]);
-  const variants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 },
-  };
 
   const pathVariant = {
     initial: { pathLength: 0 },

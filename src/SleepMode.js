@@ -16,7 +16,7 @@ const SleepMode = () => {
     if(!isTimerOn) clearInterval(timerInterval)
     if(isTimerOn){
       console.log('hit')
-      const startDate = localStorage.setItem('timer', moment())
+      // const startDate = localStorage.setItem('timer', moment())
       timerInterval = setInterval (() => {
         console.log(moment().diff(localStorage.getItem('timer')))
       },4000)

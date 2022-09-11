@@ -1,14 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import AppTest from './AppTest';
-import Test3 from './Test3';
-import MyTest from './MyTest'
-import AppFramerMotion from './AppFramerMotion';
-import CallbackTest from './useCallBackTest';
-import SleepMode from './SleepMode';
 import CameraPwa from './CameraPwa';
 
 ReactDOM.render(

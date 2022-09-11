@@ -6,20 +6,7 @@ function App() {
   const [ isModalOPen, setModalOpen] = useState(false)
   const [ triggerFetch, setTriggerFetch ] = useState(false)
 
-  // function to check if browser accpets notifications
-  function isPushNotificationSupported() {
-    return "serviceWorker" in navigator && "pushManager" in window
-  }
 
-  // register a service Worker
-  function registerServiceWorker() {
-    return navigator.serviceWorker.register("/sw.js")
-  }
-
-  // ask the user for a permission
-  async function askUserPermission() {
-    return await Notification.requestPermission()
-  }
 
   //receive push notification from the push server
   
@@ -27,7 +14,7 @@ function App() {
   useEffect(() => {
     if(triggerFetch === true)
       setCount(count +1)
-  }, [triggerFetch ])
+  }, [triggerFetch, count ])
 
   const handleOpenModal = () => {
     setTriggerFetch(false)

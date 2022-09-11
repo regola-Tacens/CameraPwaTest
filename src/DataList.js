@@ -10,7 +10,7 @@ const DataList = ({ filter }) => {
       coin.id === filter ? {...coin,active: false} : coin
     )
     setData(filteredData)
-  },[filter])
+  },[filter, data])
 
   return (
     <div>
