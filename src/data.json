@@ -1,0 +1,32 @@
+[
+  {
+    "id":1,
+    "active":true,
+    "currency" : "BTC"
+  },
+  {
+    "id":2,
+    "active":true,
+    "currency" : "UNI"
+  },
+  {
+    "id":3,
+    "active":true,
+    "currency" : "AVAX"
+  },
+  {
+    "id":4,
+    "active":true,
+    "currency" : "DOGE"
+  },
+  {
+    "id":5,
+    "active":true,
+    "currency" : "SHINU"
+  },
+  {
+    "id":6,
+    "active":true,
+    "currency" : "POLKA"
+  }
+]

@@ -1,13 +1,76 @@
+html,
 body {
+  min-height: 100vh;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
 }
+
+body {
+  background: white;
+  background-repeat: no-repeat;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.parent {
+  background: white;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent[data-isOpen="true"] {
+  width: 400px;
+  height: 100px;
+}
+
+.child {
+  width: 40px;
+  height: 40px;
+  background: #f107a3;
+  border-radius: 50%;
+}
+
+.container{
+  background-color: aliceblue;
+  width: 600px;
+  overflow: hidden;
+}
+
+.container__item{
+  content:'';
+  min-width: 1200px;
+  height: 300px;
+  background: linear-gradient(90deg,rgb(234, 9, 43), blue);
+}
+.scrollButton{
+  cursor: pointer;
+  background-color: #f107a3;
+  padding: 1rem;
+  display: inline-block;
+  color: white;
+  margin: 1rem;
+}
+
+.pos1{
+  transform: translateX(0px);
+  transition: 0.8s transform ease-in-out ;
+}
+.pos2{
+  transform: translateX(-300px);
+  transition: 0.8s transform ease-in-out ;
+}
+.pos3{
+  transform: translateX(-600px);
+  transition: 0.8s transform ease-in-out ;
+}
+
